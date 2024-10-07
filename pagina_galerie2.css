@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+#header {
+    font-family: Arial, sans-serif;
+}
+
+#header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #798777;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#header .button:hover {
+  background-color: #798777;
+  transform: translateY(-2px);
+}
+
+
+
+#header .button:active {
+    transform: translateY(1px);
+}
+
+#header .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+body {
+  flex-direction: column;
+  padding: 2rem;
+  background-color:  #E4DCCF!important;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:50px;
+  text-align:center;
+  color: #000000;
+  padding:1%;
+}
+body, .parent-container, .child-container {
+    display: flex;
+}
+body .inapoi .to-top{
+    background: #ffffff;
+    position: fixed;
+    bottom: 16px;
+    right: 22px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 100;
+}
+body .inapoi .to-top.active{
+    bottom: 12px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.parent-container {
+    width: 100%;
+    justify-content: center;
+    gap: 30px 30px;
+}
+  .child-container {
+    width: 30%;
+    height: auto;
+    gap: 30px 30px;
+    flex-direction: column;
+  }
+  .child-container img {
+    transition: all 1s ease-in-out 0s;
+   box-shadow: 2px 2px 20px gray, inset 2px 2px 10px lightgray;
+  }
+  .child-container img:hover {
+    box-shadow: 4px 4px 25px black, inset 2px 2px 2px 10px rgb(0, 0, 20);
+   
+  }
+  
+  .greeting {
+    text-align: center;
+    color: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+  }
+  .fa-brands {
+    font-size: 50px;
+  }
+  .greeting, .fa-brands {
+    text-shadow: 2px 2px 10px lightgray;
+    
+  }
+  
+
